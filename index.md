@@ -14,6 +14,7 @@ layout: default
 2.输入'cmd'
 3.输入 'pip install pygame' 配置pygame
 ### 基础
+```
 
 导入所需的模块  
 import pygame, sys  
@@ -30,8 +31,11 @@ screen = pygame.display.set_mode((500, 400))
 设置窗口标题  
 pygame.display.set_caption('Hello World')   
 
+
+
 程序主循环    
-while True:  
+while True:   
+
     获取事件  
     for event in pygame.event.get():  
         判断事件是否为退出事件  
@@ -41,12 +45,12 @@ while True:
             退出系统  
             sys.exit()  
 
-     绘制屏幕内容
+    绘制屏幕内容
 
     pygame.display.update()
 
 
-
+```
 ### Definition lists can be used with HTML syntax.
 
 <dl>
