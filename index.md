@@ -30,16 +30,16 @@ screen = pygame.display.set_mode((500, 400))
 设置窗口标题  
 pygame.display.set_caption('Hello World')   
 
-程序主循环  
-while True:
-    获取事件
-    for event in pygame.event.get():
-        判断事件是否为退出事件
-        if event.type == QUIT:
-            退出pygame
-            pygame.quit()
-            退出系统
-            sys.exit()
+程序主循环    
+while True:  
+    获取事件  
+    for event in pygame.event.get():  
+        判断事件是否为退出事件  
+        if event.type == QUIT:  
+            退出pygame  
+            pygame.quit()  
+            退出系统  
+            sys.exit()  
 
      绘制屏幕内容
 
