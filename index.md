@@ -1,117 +1,62 @@
 ---
 layout: default
 ---
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1387581250&auto=1&height=66"></iframe>
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+这是关于zld学习python中pygame的记录
 
-[Link to another page](./another-page.html).
+# text 1
+## num1
+第一天，学习了有关于pygame的pip配置
+### 配置
 
-There should be whitespace between paragraphs.
+1.使用 win+r 开始运行
+2.输入cmd
+3.输入 pip install pygame 配置pygame
+### 基础
+导入所需的模块
+import pygame, sys
+导入所有pygame.locals里的变量（比如下面大写的QUIT变量）
+from pygame.locals import *
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+初始化pygame
+pygame.init()
 
-# Header 1
+设置窗口的大小，单位为像素
+screen = pygame.display.set_mode((500, 400))
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+设置窗口标题
+pygame.display.set_caption('Hello World')
 
-## Header 2
+程序主循环
+while True:
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+    获取事件
+    for event in pygame.event.get():
+        判断事件是否为退出事件
+        if event.type == QUIT:
+            退出pygame
+            pygame.quit()
+            退出系统
+            sys.exit()
 
-### Header 3
+     绘制屏幕内容
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+    pygame.display.update()
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
 
 ### Definition lists can be used with HTML syntax.
 
 <dl>
 <dt>Name</dt>
-<dd>Godzilla</dd>
+<dd>zld</dd>
 <dt>Born</dt>
-<dd>1952</dd>
+<dd>2002</dd>
 <dt>Birthplace</dt>
-<dd>Japan</dd>
+<dd>china</dd>
 <dt>Color</dt>
-<dd>Green</dd>
+<dd>blue</dd>
 </dl>
 
 ```
