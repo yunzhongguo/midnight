@@ -16,15 +16,20 @@ layout: default
 ### 基础
 
 导入所需的模块  
-import pygame, sys
+import pygame, sys  
+
 导入所有pygame.locals里的变量（比如下面大写的QUIT变量）  
-from pygame.locals import *
+from pygame.locals import *  
+
 初始化pygame  
-pygame.init()
+pygame.init()   
+
 设置窗口的大小，单位为像素   
-screen = pygame.display.set_mode((500, 400))
+screen = pygame.display.set_mode((500, 400))   
+
 设置窗口标题  
-pygame.display.set_caption('Hello World')
+pygame.display.set_caption('Hello World')   
+
 程序主循环  
 while True:
     获取事件
